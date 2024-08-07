@@ -523,7 +523,7 @@ section {
 	border-top: 1px solid $green-color;
 	border-bottom: 1px solid $green-color;
 	&__facebook,
-	&__instagram{
+	&__instagram {
 		width: 50px;
 	}
 	&__twitter,
@@ -554,7 +554,7 @@ section {
 		}
 	}
 	&__info {
-		padding-bottom: 1em;
+		padding-bottom: 1.5em;
 		text-align: center;
 	}
 	&__title {
@@ -563,7 +563,7 @@ section {
 	}
 	&__text {
 		font-size: 2rem;
-		padding: 1em;
+		padding: 0 1em 1.5em;
 	}
 	&__ullist {
 		&-contain {
@@ -571,10 +571,10 @@ section {
 			img {
 				position: absolute;
 				width: 20px;
-				margin-left: 2em;
+				margin-left: 3.5em;
 			}
 			&-text {
-				margin-left: 4em;
+				margin-left: 5em;
 			}
 		}
 	}
@@ -797,7 +797,7 @@ section {
 				margin-top: 0.5em;
 				list-style: none;
 				&-item {
-					margin-bottom: 1em;
+					margin-bottom: 0.5em;
 				}
 				a {
 					color: rgb(61, 61, 61);
@@ -814,6 +814,7 @@ section {
 	.full-offer {
 		&__option {
 			display: flex;
+			max-width: 1200px;
 			&-img {
 				width: 50%;
 				transition: 0.3s;
@@ -884,6 +885,12 @@ section {
 			}
 		}
 	}
+	.full-offer__ullist {
+		margin-left: 3.5em;
+		&-contain {
+			list-style-type: none;
+		}
+	}
 }
 
 @media (min-width: 1200px) {
@@ -932,6 +939,9 @@ section {
 	}
 
 	.full-offer {
+		&__option {
+			margin: 1em auto;
+		}
 		&__ullist {
 			&-contain {
 				&-text {
