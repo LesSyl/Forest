@@ -1,6 +1,8 @@
 @use 'colors' as *;
 
-* {
+*,
+*::after,
+*::before {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -224,9 +226,13 @@ section {
 			}
 
 			&-item {
-				color: $black-color;
+				color: $dark-grey;
 				text-decoration: none;
 				cursor: pointer;
+				transition: color 0.3s;
+				&:hover {
+					color: $black-color;
+				}
 			}
 			&-title {
 				font-size: 2rem;
@@ -236,9 +242,6 @@ section {
 				font-size: 1.5rem;
 				line-height: 1.5em;
 				letter-spacing: 0.5px;
-			}
-			&-item {
-				color: $dark-grey;
 			}
 		}
 	}
@@ -536,6 +539,10 @@ section {
 	&__youtube {
 		padding: 1em;
 		cursor: pointer;
+		transition: transform 0.3s;
+		&:hover {
+			transform: scale(1.4);
+		}
 	}
 }
 
@@ -800,8 +807,13 @@ section {
 					margin-bottom: 0.5em;
 				}
 				a {
-					color: rgb(61, 61, 61);
+					color: $dark-grey;
 					text-decoration: none;
+					transition: color 0.3s;
+
+					&:hover {
+						color: $black-color;
+					}
 				}
 			}
 		}
