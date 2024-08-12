@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgba(221, 221, 221, 0.9058823529);
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+}
+
+.header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 5em;
+  height: 60px;
+  margin: 0.5em auto;
+}
+.header__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .company-name {
+  margin-left: 0.8em;
+  font-size: 4rem;
+  font-weight: 400;
+}
+.header .fa-tree {
+  font-size: 2.5em;
+  color: rgb(85, 84, 84);
+}
+.header .nav-mobile {
+  position: absolute;
+  display: none;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: gray;
+}
+.header .nav__item {
+  font-size: 3rem;
+  color: #355e10;
+  text-decoration: none;
+}
+
+.burger-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 1em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.burger-btn__box {
+  position: relative;
+  width: 35px;
+  height: 40px;
+  border: none;
+}
+.burger-btn__bars, .burger-btn__bars::before, .burger-btn__bars::after {
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background-color: black;
+  left: 0;
+  content: "";
+}
+.burger-btn__bars::before {
+  content: "";
+  top: 15px;
+}
+.burger-btn__bars::after {
+  content: "";
+  top: 30px;
+}
+
+.nav-desktop {
+  display: none;
+}
+
+.section {
+  height: 200vh;
+  background-color: rgb(180, 177, 177);
+}/*# sourceMappingURL=main.css.map */

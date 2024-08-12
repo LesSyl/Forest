@@ -1,0 +1,167 @@
+@use 'colors' as *;
+///////////////OFFERTS/////////////////
+
+.section {
+	.offer {
+		&__text {
+			margin: 0 0.5em 2em 0.5em;
+			font-size: 1.5rem;
+			text-align: center;
+		}
+		&__boxes {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		&__box {
+			&-card {
+				height: 330px;
+				width: 250px;
+				margin-bottom: 2em;
+				text-align: center;
+				border: 0.5px solid $border-color;
+				border-radius: 10px;
+				box-shadow: 1px 1px 15px $border-color;
+			}
+			&-title {
+				padding: 1em 0 0.5em 0;
+				font-size: 2rem;
+			}
+
+			&-price {
+				font-size: 3.5rem;
+				font-weight: bold;
+				margin-bottom: 0.5em;
+			}
+			&-ullist {
+				text-align: left;
+				margin-left: 1.5em;
+				img {
+					position: absolute;
+					width: 20px;
+					color: $green-color;
+				}
+
+				&-contain,
+				&-donotcontain {
+					margin-bottom: 0.5em;
+					list-style-type: none;
+					&-text {
+						margin-left: 2em;
+					}
+				}
+				&-donotcontain {
+					color: $dark-grey;
+				}
+			}
+		}
+	}
+
+	.btn {
+		margin-top: 1em;
+		padding: 0.5em 2.3em;
+		font-family: 'Raleway', sans-serif;
+		font-size: 1.5rem;
+		letter-spacing: 0.2px;
+		border: 0.5px solid $border-color;
+		border-radius: 10px;
+		box-shadow: 1px 2px 13px $border-color;
+		cursor: pointer;
+		transition: border 0.9s;
+
+		&::before {
+			background-color: #6dba45;
+		}
+		&:hover {
+			border: 0.5px solid $green-color;
+			box-shadow: 2px 5px 15px $green-color;
+		}
+	}
+}
+
+.btn-special-animation {
+	position: relative;
+	transition: background-color 0.9s;
+	overflow: hidden;
+	z-index: 0;
+
+	&::before {
+		position: absolute;
+		display: block;
+		content: '';
+		top: 0;
+		left: 0;
+		width: 110%;
+		height: 110%;
+		transform: scaleX(0);
+		transform-origin: right;
+		transition: transform 0.9s;
+		z-index: -1;
+	}
+	&:hover::before {
+		transform: scaleX(1);
+		transform-origin: left;
+	}
+}
+
+.more-offers {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+	margin-bottom: 1em;
+	font-size: 1.9rem;
+	background-color: $base-color;
+	border: 1px solid $green-color;
+	overflow: hidden;
+
+	a {
+		color: $black-color;
+		text-decoration: none;
+		transition: transform 1s;
+		&:hover {
+			transform: scale(1.3);
+		}
+	}
+}
+
+///////////////FULL OFFERTS/////////////////
+
+.full-offer {
+	&__option {
+		margin: 1em;
+		border: 0.5px solid $border-color;
+		border-radius: 10px;
+		box-shadow: 1px 1px 15px $border-color;
+		border-radius: 10px;
+		overflow: hidden;
+		&-img {
+			width: 100%;
+		}
+	}
+	&__info {
+		padding-bottom: 1.5em;
+		text-align: center;
+	}
+	&__title {
+		font-size: 2.5rem;
+		padding: 0.3em;
+	}
+	&__text {
+		font-size: 2rem;
+		padding: 0 1em 1.5em;
+	}
+	&__ullist {
+		&-contain {
+			text-align: left;
+			img {
+				position: absolute;
+				width: 20px;
+				margin-left: 3.5em;
+			}
+			&-text {
+				margin-left: 5em;
+			}
+		}
+	}
+}
