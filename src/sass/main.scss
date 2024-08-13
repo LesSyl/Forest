@@ -118,7 +118,7 @@ section {
 
 			&-img {
 				width: 100%;
-				padding: 0 2em 2em;
+				padding: 0 2.5em 2em;
 			}
 			&-text {
 				margin: 0 2em;
@@ -275,13 +275,15 @@ section {
 			&__adventures {
 				display: flex;
 				flex-direction: row;
+				margin: 0 3em;
 				&-text {
-					margin: 1em 0 1em 1em;
+					margin: 1em 0 1em 4em;
 					text-align: left;
 				}
 				&-img {
 					width: 50%;
-					padding: 1em;
+					// margin-left: 2em;
+					padding: 1.5em 1.5em 1.5em 0;
 				}
 				&-description {
 					font-size: 1.8rem;
