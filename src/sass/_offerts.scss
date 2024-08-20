@@ -45,7 +45,7 @@
 				&-contain,
 				&-donotcontain {
 					margin-bottom: 0.5em;
-					list-style-type: none;
+					list-style: none;
 					&-text {
 						margin-left: 2em;
 					}
@@ -154,6 +154,7 @@
 	&__ullist {
 		&-contain {
 			text-align: left;
+			list-style: none;
 			img {
 				position: absolute;
 				width: 20px;

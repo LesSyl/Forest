@@ -1,4 +1,4 @@
-// const allNavItems = nav.querySelectorAll('.nav__item')
+
 let section = document.querySelectorAll('section')
 let navLinks = document.querySelectorAll('.nav-desktop__item')
 

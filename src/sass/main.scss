@@ -55,8 +55,8 @@ section {
 			display: flex;
 			align-items: center;		
 			text-decoration: none;
-			margin-left: 1em;
 			img{
+				margin-left: 1em;
 				width: 1.5em;
 			}
 			&-title {
@@ -98,12 +98,12 @@ section {
 		width: 90%;
 		color: #fff;
 		.hero-caption {
-			font-size: 1.3rem;
+			font-size: 1.5rem;
 			margin-bottom: 0.2em;
 			font-weight: 200;
 		}
 		.hero-title {
-			font-size: 1.5rem;
+			font-size: 1.7rem;
 			font-weight: bold;
 			letter-spacing: 1.3px;
 			color: rgb(255, 255, 255);
