@@ -4,3 +4,5 @@ i technologii omawianych podczas kursów.
 
 Efektem końcowym była w pełni funkcjonalna realizacja, która nie tylko spełniała założenia projektowe, ale również demonstrowała wysoki poziom zrozumienia tematyki.
 Projekt stał się wartościowym elementem portfolio, potwierdzającym gotowość do podjęcia nowych wyzwań w środowisku zawodowym.
+
+Live: https://lessyl.github.io/Forest/
